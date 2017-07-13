@@ -1,0 +1,41 @@
+'use strict';
+
+
+describe("fizzbuzzwhizz", () => {
+
+    it('when there is the seventh rule, should print fizz if num is 7', () => {
+        let num = 105;
+        let result = "fizzbuzzwhizz";
+        expect(fizzbuzzwhizz(num)).toEqual(result);
+    })
+    it('when there is the sixth rule, should print fizz if num is 7', () => {
+        let num = 70;
+        let result = "buzzwhizz";
+        expect(fizzbuzzwhizz(num)).toEqual(result);
+    })
+    it('when there is the fifth rule, should print fizz if num is 7', () => {
+        let num = 21;
+        let result = "fizzwhizz";
+        expect(fizzbuzzwhizz(num)).toEqual(result);
+    })
+    it('when there is the forth rule, should print fizz if num is 15', () => {
+        let num = 15;
+        let result = "fizzbuzz";
+        expect(fizzbuzzwhizz(num)).toEqual(result);
+    })
+    it('when there is the first rule, should print fizz if num is 3', () => {
+        let num = 3;
+        let result = "fizz";
+        expect(fizzbuzzwhizz(num)).toEqual(result);
+    })
+    it('when there is the second rule, should print fizz if num is 5', () => {
+        let num = 5;
+        let result = "buzz";
+        expect(fizzbuzzwhizz(num)).toEqual(result);
+    })
+    it('when there is the mostimprontant rule, should print fizz if num contains 3', () => {
+        let num = 13;
+        let result = "fizz";
+        expect(fizzbuzzwhizz(num)).toEqual(result);
+    })
+})

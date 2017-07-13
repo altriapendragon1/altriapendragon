@@ -1,0 +1,41 @@
+ 'use strict';
+
+function fizzbuzzwhizz(num) {
+    let str=num.toString()
+    var i=str.indexOf(3)
+    let result = "";
+    if(i>=0) {
+        result = "fizz"
+    }
+
+
+    else if( num % 105== 0)
+    {
+         result = 'fizzbuzzwhizz';
+    }
+    else if( num % 35== 0)
+    {
+         result = 'buzzwhizz';
+    }
+    else if( num % 21== 0)
+    {
+         result = 'fizzwhizz';
+    }
+    else if( num % 15== 0)
+    {
+         result = 'fizzbuzz';
+    }
+    else if( num % 7== 0)
+    {
+        result = 'whizz';
+    }
+    else if( num % 5== 0)
+    {
+         result = 'buzz';
+    }
+    else if( num % 3== 0)
+    {
+         result = 'fizz';
+    }
+    return result;
+}
